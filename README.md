@@ -1,11 +1,11 @@
-<div style="display:flex; flex-direction:column; align-items: center;">
-<img src="./public/logo.png" alt="Eva Ecommerce" style="height:100px;width:250px; obeject-fit:cover; margin: 10px;">
-<span style="margin: 10px; font-size:1.2rem;"> Clique <b><a href="https://www.google.com" target="_blank"> aqui </a></b> para a demo</span>
-</div>
+<p align="center">
+<img src="./public/logo.png" alt="Eva commerce" style="height:100px;width:250px; obeject-fit:cover; margin: 10px;" />
+<p style="margin: 10px; font-size:1.2rem;" align="center"> Clique <b><a href="https://www.google.com" target="_blank"> aqui </a></b> para a demo</p>
+</p>
 
 <hr>
 
-<h2> O oque é o <b>Eva Ecommerce</b>?</h2>
+<h2> O oque é o <b>Eva Commerce</b>?</h2>
 <p>O Eva Ecommerce é um projeto que desenvolvi no processo seletivo para a <a href="https://www.evacommerce.com.br/" target="_black">agencia Eva</a>. O obejetivo que do desafio era eu vivenciar a experiência do desenvolvimento da parte Front End de um ecommerce. Particularmente gostei muito de desenvovler um projeto assim, já que tive como referencia de design UI e UX,  de exelente qualidade, sendo um desafio desenvolver uma inferface de forma que houvesse a maior semelhança com o projeto</p>
 <hr>
 
@@ -27,8 +27,7 @@ para que pudesse consumir, sendo assim os produtos da loja seriam dinamicos, já
 <h2>Sobre o desenvolvimento</h2>
 
 <p>Para o desenvolvimento do projeto foi disponibilizado um modelo que deveriamos seguir.</p>
-<img src="https://i.imgur.com/88J1LNy.png
-" alt="Eva Ecommerce" style="height:450px;width:400px; obeject-fit:cover; margin: 10px;">
+<img src="https://i.imgur.com/88J1LNy.png" alt="Eva Ecommerce" style="height:450px;width:400px; obeject-fit:cover; margin: 10px;"/>
 
 <h3>Tecnologias  usadas no desenvolvimento</h3>
 <ul>
@@ -41,12 +40,12 @@ para que pudesse consumir, sendo assim os produtos da loja seriam dinamicos, já
 <hr>
 
 <h3>Vejas algumas imagens do projeto</h3>
-<div style="display:flex; flex-direction:column; align-items: center;">
-    <img src="https://i.imgur.com/4Pwq2td.png" alt="opss..." style="margin: 10px;">
-    <img src="https://i.imgur.com/jOxgzgD.png" alt="opss..." style="margin: 10px;">
-    <img src="https://i.imgur.com/8WXuwUb.png" alt="opss..." style="margin: 10px;">
-    <img src="https://i.imgur.com/wEtL8fp.png" alt="opss..." style="margin: 10px;">
-    <img src="https://i.imgur.com/rVG32Ys.png" alt="opss..." style="margin: 10px;">
-</ul>
+<p align="center">
+    <img src="https://i.imgur.com/4Pwq2td.png" alt="opss..." style="margin: 10px;" />
+    <img src="https://i.imgur.com/jOxgzgD.png" alt="opss..." style="margin: 10px;" />
+    <img src="https://i.imgur.com/8WXuwUb.png" alt="opss..." style="margin: 10px;" />
+    <img src="https://i.imgur.com/wEtL8fp.png" alt="opss..." style="margin: 10px;" />
+    <img src="https://i.imgur.com/rVG32Ys.png" alt="opss..." style="margin: 10px;" />
+</p>
 
 <span style="text-align:center;">Desenvoldido por <b>Antonio Marcos</b>.<span>
