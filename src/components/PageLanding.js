@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
-import { Container, Information, Banner } from "../styles/components/PageLanding";
+import {
+  Container,
+  Information,
+  Banner,
+  Categories,
+} from "../styles/components/PageLanding";
 
 import LockIcon from "@material-ui/icons/Lock";
 import CreditCardIcon from "@material-ui/icons/CreditCard";
@@ -8,6 +13,9 @@ import LocalShippingIcon from "@material-ui/icons/LocalShipping";
 
 import Item_1_Img from "../assets/images/banner.jpeg";
 
+import category1 from "../assets/images/category-1.jpeg";
+import category2 from "../assets/images/category-2.jpeg";
+import category3 from "../assets/images/category-3.jpeg";
 
 
 export const PageLanding = () => {
@@ -29,8 +37,8 @@ export const PageLanding = () => {
       image: `${Item_1_Img}`,
     },
     2: {
-      tittle: "Os melhores utensílios",
-      subtittle: "estão te esperando aqui!",
+      tittle: "Seus livros Favoritos 3",
+      subtittle: "estão te esperando aqui! 3",
       image: `${Item_1_Img}`,
     },
     3: {
@@ -41,7 +49,7 @@ export const PageLanding = () => {
   };
 
   const HandleSelect = () => {
-    changeSelect(current)
+    changeSelect(current);
     setCurrentTittle(slideContent[current].tittle);
     setCurrentSubtittle(slideContent[current].subtittle);
     setCurrentImg(slideContent[current].image);
@@ -52,7 +60,7 @@ export const PageLanding = () => {
     selects.forEach((select) => {
       select.classList.remove("selected-item");
     });
-    selects[index].classList.add("selected-item")
+    selects[index].classList.add("selected-item");
   };
 
   useEffect(() => {
@@ -111,6 +119,26 @@ export const PageLanding = () => {
           <span>Entrega para todo o Brasil</span>
         </div>
       </Information>
+
+      <Categories>
+
+        {/* Aqui podemos adicionar um Link, para uma roda, que redireciona 
+        para uma pagina especifica da categoria.
+        */}
+
+        <div>
+          <img src={category1} alt={"opss..."}/>
+          <span>Livros</span>
+        </div>
+        <div>
+          <img src={category2} alt={"opss..."}/>
+          <span>Escritório</span>
+        </div>
+        <div>
+          <img src={category3} alt={"opss..."}/>
+          <span>Vestuário</span>
+        </div>
+      </Categories>
     </Container>
   );
 };

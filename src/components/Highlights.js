@@ -5,15 +5,14 @@ import { Container } from "../styles/components/HighLights";
 import api from "../services/api";
 
 const Highlights = (props) => {
-  const [products, setProducts] = useState([]);
+  const [products, setproducts] = useState([]);
   useEffect(() => {
-    async function getProducts() {
+    async function getProduct() {
       const response = await api.get(`category/${props.id}`);
-      setProducts(response.data);
-        console.log(response.data);
+      setproducts(response.data.product);
     }
-    getProducts();
-  }, [setProducts]);
+    getProduct();
+  }, []);
 
   return (
     <Container>
@@ -21,7 +20,21 @@ const Highlights = (props) => {
         <div className="bar" />
         <h1>Destaques em {props.tittle}</h1>
       </div>
-
+      <div className="cards">
+        {products.map((product, index) => {
+          return (
+            <CardProduct
+              key={index}
+              images={product.images}
+              price={product.price}
+              promotionalPrice={product.promotional_price}
+              stars={product.stars}
+              name={product.name}
+              className="card"
+            />
+          );
+        })}
+      </div>
     </Container>
   );
 };

@@ -1,4 +1,6 @@
-import { useState } from "react";
+import react, { useState } from "react";
+
+import { useCart } from "../context/Cart";
 
 import {
   Container,
@@ -17,11 +19,10 @@ import PersonIcon from "@material-ui/icons/Person";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Header = () => {
-  const [openCategories, SetOpenCategories] = useState(
-    false
-  );
-
+  const [openCategories, SetOpenCategories] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const { cart } = useCart();
 
   return (
     <Container>
@@ -53,14 +54,14 @@ const Header = () => {
             <PersonIcon />
           </Account>
           <Cart>
-            <span>Carrinho(2)</span>
+            <span>Carrinho({cart})</span>
             <ShoppingCartIcon />
+            {/* Aqui podemos abrir Widget para mostrar os itens do carrinho
+              sendo possivel remover e ver o preço final dos produtos.
+            */}
           </Cart>
         </Menu>
-        <Hamburger
-          open={open}
-          onClick={() => setOpen(!open)}
-        >
+        <Hamburger open={open} onClick={() => setOpen(!open)}>
           <span />
         </Hamburger>
       </NavegationBar>
