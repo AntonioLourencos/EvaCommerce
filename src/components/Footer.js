@@ -7,7 +7,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 const Footer = () => {
   return (
     <Container>
-      <h1 className="tittle">Eva Shop</h1>
+      <h1 className="tittle">Eva</h1>
       <section className="container-options">
         <Information>
           <StorefrontIcon className="ico" />
