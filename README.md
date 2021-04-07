@@ -1,6 +1,6 @@
 <p align="center">
 <img src="./public/logo.png" alt="Eva commerce" style="height:100px;width:250px; obeject-fit:cover; margin: 10px;" />
-<p style="margin: 10px; font-size:1.2rem;" align="center"> Clique <b><a href="https://www.google.com" target="_blank"> aqui </a></b> para a demo</p>
+<p style="margin: 10px; font-size:1.2rem;" align="center"> Clique <b><a href="https://eva-commerce.vercel.app" target="_blank"> aqui </a></b> para a demo</p>
 </p>
 
 <hr>
