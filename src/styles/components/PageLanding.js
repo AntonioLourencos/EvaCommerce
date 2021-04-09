@@ -86,6 +86,23 @@ export const Banner = styled.div`
     }
   }
 
+  @media (min-width: 1200px) {
+
+    height: 550px;
+
+    .slide{
+      width: 100%;
+      margin:0px;
+      height: 600px;
+    }
+
+    .slide-image {
+      object-fit: cover;
+      height: 550px;
+      filter: brightness(60%) !important;
+    }
+  }
+
   @media (max-width: 768px) {
     .slide-container-text {
       & :nth-child(1) {
